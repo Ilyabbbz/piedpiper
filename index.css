@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+    display: flex;
+    padding: 1em 2em;
+    background-color: #007765;
+}
+.nav-list{
+    display: flex;
+}
+nav{
+    margin-left:auto ;
+}
+h2{
+    text-align: center;
+    color: #007765;
+    font-size: 64px;
+    padding: .4em 0;
+}
+p{
+    font-size: 32px;
+    padding: 0 1em;
+}
+.PNHere-section{
+    color:#fff;
+    background-image: url(/img/fon1.png);
+}
+.PNHere-section h1{
+    font-size: 72px;
+    padding: 2em 0;
+    text-align: center;
+}
+.fon2-section{
+    background-image: url(/img/fon2.png);
+    font-size: 48px;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    padding: 2em 0;
+}
+.PPC-div{
+    display: flex;
+}
+#head{
+    grid-column: 1 / 4;
+}
+.team-section{
+    justify-items: center;
+    display: grid;
+    grid-row-gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "head head head"
+                         "rich dine bert"
+                         "jare moni bash";
+}
